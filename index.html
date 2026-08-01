@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Free Blog</title>
+  <title>Tillyverse</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Blog</h1>
+  <nav>
+  <a href="index.html">Home</a> |
+  <a href="posts/post1.html">Blog</a> |
+  <a href="about.html">About Me</a>
+</nav>
+
+<h1 class="customfont">Welcome to the Tillyverse</h1>
   <p>This blog is fully handmade and hosted for free.</p>
 
   <h2>Latest Posts</h2>
   <ul>
     <li><a href="posts/post1.html">My First Post</a></li>
   </ul>
+<script>
+  function createParticle() {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+
+    // sparkle emoji 🪷
+    particle.textContent = "🪷";
+
+    // random horizontal position
+    particle.style.left = Math.random() * window.innerWidth + 'px';
+
+    // random animation duration
+    particle.style.animationDuration = (3 + Math.random() * 3) + 's';
+
+    document.body.appendChild(particle);
+
+    // remove particle after animation
+    setTimeout(() => {
+      particle.remove();
+    }, 7000);
+  }
+
+  // create particles continuously
+  setInterval(createParticle, 200);
+</script>
 </body>
 </html>
