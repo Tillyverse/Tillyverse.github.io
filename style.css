@@ -135,15 +135,4 @@ p {
     transform: translateY(110vh) translateX(40px) rotate(360deg);
     opacity: 0;
   }
-  /* ✨ Sparkle Trail — Light Green ✨ */
-.sparkle {
-  position: fixed;
-  width: 12px;
-  height: 12px;
-  pointer-events: none;
-  border-radius: 50%;
-  background: radial-gradient(circle, #ffffff 0%, #b6ffb6 40%, transparent 70%);
-  mix-blend-mode: screen;
-  animation: sparkleFade 0.8s linear forwards;
-}
 }
