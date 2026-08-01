@@ -10,7 +10,6 @@
 /* CUSTOM CURSOR */
 html, body, * {
   cursor: url('https://img.icons8.com/pulsar-gradient/48/sakura.png') 0 0, auto !important;
-
 }
 
 /* MAIN BODY */
@@ -21,17 +20,15 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: #ff1493;
-  max-width: 700px;
-  margin: auto;
   padding: 20px;
   line-height: 1.6;
 }
 
-/* CUSTOM HEADER FONT (TILLYVERSE) */
+/* CUSTOM HEADER FONT */
 .customfont {
   font-family: 'WizardsMagic', cursive;
   font-size: 60px;
-  color: #ff1493; /* hot pink */
+  color: #ff1493;
   text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
 }
 
@@ -42,7 +39,6 @@ nav {
 }
 
 nav a {
-  font-family: 'Crafty Girls', cursive;
   color: #ff1493;
   text-decoration: none;
   margin: 0 10px;
@@ -64,31 +60,56 @@ p {
   font-size: 18px;
 }
 
-/* CONTENT BOX */
-.container {
-  background: rgba(0, 0, 0, 0.4);
+/* ✨ Y2K WRAPPER ✨ */
+#wrapper {
+  width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 240, 250, 0.85);
+  border: 3px solid hotpink;
   padding: 20px;
-  border-radius: 15px;
+  overflow: auto;
+}
+
+/* SIDEBAR */
+#sidebar {
+  width: 250px;
+  float: left;
+  padding: 10px;
+}
+
+/* MAIN CONTENT */
+#content {
+  width: 600px;
+  float: right;
+  padding: 10px;
+}
+
+/* Y2K BUTTONS */
+.y2k-button {
+  display: block;
+  width: 180px;
+  margin: 10px auto;
   border: 2px solid gold;
-  max-width: 800px;
-  margin: auto;
+  border-radius: 10px;
 }
 
-/* SPARKLE TEXT */
-.sparkle {
-  color: #ffd700;
-  text-shadow:
-    0 0 5px #fff,
-    0 0 10px #ffd700,
-    0 0 15px #ffb6c1,
-    0 0 20px #ff69b4;
+/* BLINKIES */
+.blinkie {
+  display: block;
+  margin: 5px auto;
 }
 
-/* ✨ FALLING SPARKLE PARTICLES ✨ */
+/* DOLLS */
+.doll {
+  display: block;
+  margin: 10px auto;
+  width: 180px;
+}
+
+/* ✨ CIRCLE PARTICLES ✨ */
 .particle {
   position: fixed;
-  top: -50px;
-  font-size: 25px;
+  top: -20px;
   pointer-events: none;
   animation: fall 4s linear forwards;
   opacity: 1;
@@ -96,43 +117,11 @@ p {
 
 @keyframes fall {
   0% {
-    transform: translateY(0) translateX(0) rotate(0deg);
+    transform: translateY(0) translateX(0);
     opacity: 1;
   }
   100% {
-    transform: translateY(110vh) translateX(40px) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-
-/* SPARKLE TEXT */
-.sparkle {
-  color: #ffd700;
-  text-shadow:
-    0 0 5px #fff,
-    0 0 10px #ffd700,
-    0 0 15px #ffb6c1,
-    0 0 20px #ff69b4;
-}
-
-/* ✨ FALLING PARTICLES ✨ */
-.particle {
-  position: fixed;
-  top: -50px;
-  font-size: 35px;
-  pointer-events: none;
-  animation: fall 4s linear forwards;
-  opacity: 1;
-}
-
-@keyframes fall {
-  0% {
-    transform: translateY(0) translateX(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(110vh) translateX(40px) rotate(360deg);
+    transform: translateY(110vh) translateX(40px);
     opacity: 0;
   }
 }
