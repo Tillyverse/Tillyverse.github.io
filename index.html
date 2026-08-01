@@ -7,32 +7,31 @@
 
 <body>
 
-<!-- ✨ MAIN WRAPPER (Y2K BOX) ✨ -->
+<!-- ✨ MAIN WRAPPER ✨ -->
 <div id="wrapper">
 
-  <!-- 💗 SIDEBAR (blinkies, dolls, buttons, widgets) -->
+  <!-- 💗 SIDEBAR -->
   <div id="sidebar">
 
-    <!-- Cute buttons -->
-    <img class="y2k-button" src="YOUR-BUTTON-1">
-    <img class="y2k-button" src="YOUR-BUTTON-2">
-    <img class="y2k-button" src="YOUR-BUTTON-3">
+    <!-- Buttons (replace with your own images) -->
+    <img class="y2k-button" src="assets/button1.png">
+    <img class="y2k-button" src="assets/button2.png">
+    <img class="y2k-button" src="assets/button3.png">
 
     <!-- Blinkies -->
-    <img class="blinkie" src="YOUR-BLINKIE-1">
-    <img class="blinkie" src="YOUR-BLINKIE-2">
-    <img class="blinkie" src="YOUR-BLINKIE-3">
+    <img class="blinkie" src="assets/blinkie1.gif">
+    <img class="blinkie" src="assets/blinkie2.gif">
 
-    <!-- Pixel dolls -->
-    <img class="doll" src="YOUR-DOLL-IMAGE">
+    <!-- Pixel doll -->
+    <img class="doll" src="assets/doll.png">
 
-    <!-- Mini games -->
+    <!-- Mini widgets -->
     <iframe src="https://tamagotchi.neocities.org/" width="200" height="250" style="border:none;"></iframe>
     <iframe src="https://thefishbowl.neocities.org/" width="200" height="200" style="border:none;"></iframe>
 
   </div>
 
-  <!-- 💖 MAIN CONTENT AREA -->
+  <!-- 💖 MAIN CONTENT -->
   <div id="content">
 
     <nav>
@@ -63,23 +62,28 @@
 
 </div>
 
-<!-- ✨ SPARKLE PARTICLES (your existing script) -->
+<!-- ✨ CIRCLE PARTICLE SCRIPT ✨ -->
 <script>
   function createParticle() {
     const particle = document.createElement('div');
     particle.classList.add('particle');
-    particle.textContent = "";
-particle.style.width = "10px";
-particle.style.height = "10px";
-particle.style.borderRadius = "50%";
-particle.style.background = "hotpink"; /* or gold, baby pink, etc */
+
+    particle.style.width = "10px";
+    particle.style.height = "10px";
+    particle.style.borderRadius = "50%";
+    particle.style.background = "hotpink";
+
     particle.style.left = Math.random() * window.innerWidth + 'px';
     particle.style.animationDuration = (3 + Math.random() * 3) + 's';
+
     document.body.appendChild(particle);
-    setTimeout(() => { particle.remove(); }, 7000);
+
+    setTimeout(() => {
+      particle.remove();
+    }, 7000);
   }
+
   setInterval(createParticle, 200);
 </script>
-
 </body>
 </html>
