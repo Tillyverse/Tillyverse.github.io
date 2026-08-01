@@ -4,52 +4,82 @@
   <title>Tillyverse</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav>
-  <a href="index.html">Home</a> |
-  <a href="posts/post1.html">Blog</a> |
-  <a href="about.html">About Me</a>
-</nav>
-<h1 class="customfont">Welcome to the Tillyverse</h1>
-  <p>This blog is fully handmade and hosted for free.</p>
 
-  <h2>Latest Posts</h2>
-  <ul>
-    <li><a href="posts/post1.html">My First Post</a></li>
-  </ul>
-<iframe src="https://www3.cbox.ws/box/?boxid=3558182&boxtag=aNOgdJ"
-        width="100%" height="450"
-        allowtransparency="yes"
-        allow="autoplay"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        scrolling="auto"></iframe>
+<!-- ✨ MAIN WRAPPER (Y2K BOX) ✨ -->
+<div id="wrapper">
 
+  <!-- 💗 SIDEBAR (blinkies, dolls, buttons, widgets) -->
+  <div id="sidebar">
+
+    <!-- Cute buttons -->
+    <img class="y2k-button" src="YOUR-BUTTON-1">
+    <img class="y2k-button" src="YOUR-BUTTON-2">
+    <img class="y2k-button" src="YOUR-BUTTON-3">
+
+    <!-- Blinkies -->
+    <img class="blinkie" src="YOUR-BLINKIE-1">
+    <img class="blinkie" src="YOUR-BLINKIE-2">
+    <img class="blinkie" src="YOUR-BLINKIE-3">
+
+    <!-- Pixel dolls -->
+    <img class="doll" src="YOUR-DOLL-IMAGE">
+
+    <!-- Mini games -->
+    <iframe src="https://tamagotchi.neocities.org/" width="200" height="250" style="border:none;"></iframe>
+    <iframe src="https://thefishbowl.neocities.org/" width="200" height="200" style="border:none;"></iframe>
+
+  </div>
+
+  <!-- 💖 MAIN CONTENT AREA -->
+  <div id="content">
+
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="posts/post1.html">Blog</a> |
+      <a href="about.html">About Me</a>
+    </nav>
+
+    <h1 class="customfont">Welcome to the Tillyverse</h1>
+    <p>This blog is fully handmade and hosted for free.</p>
+
+    <h2>Latest Posts</h2>
+    <ul>
+      <li><a href="posts/post1.html">My First Post</a></li>
+    </ul>
+
+    <!-- Guestbook -->
+    <iframe src="https://www3.cbox.ws/box/?boxid=3558182&boxtag=aNOgdJ"
+            width="100%" height="450"
+            allowtransparency="yes"
+            allow="autoplay"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            scrolling="auto"></iframe>
+
+  </div>
+
+</div>
+
+<!-- ✨ SPARKLE PARTICLES (your existing script) -->
 <script>
   function createParticle() {
     const particle = document.createElement('div');
     particle.classList.add('particle');
-
-    // sparkle emoji 🪷
-    particle.textContent = "🪷";
-
-    // random horizontal position
+    particle.textContent = "";
+particle.style.width = "10px";
+particle.style.height = "10px";
+particle.style.borderRadius = "50%";
+particle.style.background = "hotpink"; /* or gold, baby pink, etc */
     particle.style.left = Math.random() * window.innerWidth + 'px';
-
-    // random animation duration
     particle.style.animationDuration = (3 + Math.random() * 3) + 's';
-
     document.body.appendChild(particle);
-
-    // remove particle after animation
-    setTimeout(() => {
-      particle.remove();
-    }, 7000);
+    setTimeout(() => { particle.remove(); }, 7000);
   }
-
-  // create particles continuously
   setInterval(createParticle, 200);
 </script>
+
 </body>
 </html>
