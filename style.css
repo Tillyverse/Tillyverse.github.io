@@ -72,15 +72,15 @@ p {
 
 /* SIDEBAR */
 #sidebar {
-  width: 250px;
+  width: 200px;
   float: left;
   padding: 10px;
 }
 
 /* MAIN CONTENT */
 #content {
-  width: 600px;
-  float: right;
+  width: 400px;
+  float: middle;
   padding: 10px;
 }
 
