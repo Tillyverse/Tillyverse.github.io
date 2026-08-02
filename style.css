@@ -77,14 +77,6 @@ p {
   overflow: auto;
   border-radius: 15px;
 }
-
-/* ✨ SIDEBAR ✨ */
-#sidebar {
-  width: 250px;
-  float: left;
-  padding: 10px;
-}
-
 /* ✨ MAIN CONTENT ✨ */
 #content {
   width: 600px;
