@@ -114,7 +114,16 @@ p {
   animation: fall 4s linear forwards;
   opacity: 1;
 }
-
+/* ✨ Text background box ✨ */
+.text-box {
+  background: rgba(255, 240, 250, 0.8); /* soft pink overlay */
+  border: 2px solid hotpink;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  color: #ff1493;
+}
 @keyframes fall {
   0% {
     transform: translateY(0) translateX(0);
