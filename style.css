@@ -84,6 +84,15 @@ p {
   padding: 10px;
 }
 
+/* ✨ Y2K BUTTONS ✨ */
+.y2k-button {
+  display: block;
+  width: 180px;
+  margin: 10px auto;
+  border: 2px solid gold;
+  border-radius: 10px;
+}
+
 /* ✨ BLINKIES ✨ */
 .blinkie {
   display: block;
@@ -115,6 +124,7 @@ p {
   margin: 20px auto;
   color: #ff1493;
 }
+
 @keyframes fall {
   0% {
     transform: translateY(0) translateX(0);
@@ -125,4 +135,3 @@ p {
     opacity: 0;
   }
 }
-
