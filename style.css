@@ -1,18 +1,18 @@
-/* IMPORT GOOGLE FONT */
+/* ✨ IMPORT GOOGLE FONT ✨ */
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
 
-/* CUSTOM DOWNLOADED FONT */
+/* ✨ CUSTOM DOWNLOADED FONT ✨ */
 @font-face {
   font-family: 'WizardsMagic';
   src: url('fonts/WizardsMagic.ttf') format('truetype');
 }
 
-/* CUSTOM CURSOR */
+/* ✨ CUSTOM CURSOR ✨ */
 html, body, * {
   cursor: url('https://img.icons8.com/pulsar-gradient/48/sakura.png') 0 0, auto !important;
 }
 
-/* MAIN BODY */
+/* ✨ MAIN BODY ✨ */
 body {
   font-family: 'Crafty Girls', cursive;
   background: url('https://i.imgur.com/1QQC4Sc.jpeg');
@@ -23,25 +23,24 @@ body {
   padding: 20px;
   line-height: 1.6;
 }
-/* CENTER HEADER + PAGE LINKS */
-header, h1 {
+
+/* ✨ HEADER + NAVIGATION ✨ */
+header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-nav {
-  text-align: center;
-}
-/* CUSTOM HEADER FONT */
-.customfont {
+header h1 {
   font-family: 'WizardsMagic', cursive;
   font-size: 60px;
   color: #ff1493;
   text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
+  margin: 0 auto;
 }
 
-/* NAVIGATION */
 nav {
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -56,15 +55,16 @@ nav a:hover {
   text-shadow: 0px 0px 10px gold;
 }
 
-/* HEADERS */
+/* ✨ HEADERS ✨ */
 h1, h2 {
-  color:#ff1493;
-  text-shadow: 2px 2px 5px black;
+  color: #ff1493;
+  text-shadow: 2px 2px 5px #b8860b; /* gold glow instead of black */
 }
 
-/* PARAGRAPHS */
+/* ✨ PARAGRAPHS ✨ */
 p {
   font-size: 18px;
+  color: #ff69b4;
 }
 
 /* ✨ Y2K WRAPPER ✨ */
@@ -75,23 +75,24 @@ p {
   border: 3px solid hotpink;
   padding: 20px;
   overflow: auto;
+  border-radius: 15px;
 }
 
-/* SIDEBAR */
+/* ✨ SIDEBAR ✨ */
 #sidebar {
-  width: 200px;
+  width: 250px;
   float: left;
   padding: 10px;
 }
 
-/* MAIN CONTENT */
+/* ✨ MAIN CONTENT ✨ */
 #content {
-  width: 400px;
-  float: middle;
+  width: 600px;
+  float: right;
   padding: 10px;
 }
 
-/* Y2K BUTTONS */
+/* ✨ Y2K BUTTONS ✨ */
 .y2k-button {
   display: block;
   width: 180px;
@@ -100,20 +101,20 @@ p {
   border-radius: 10px;
 }
 
-/* BLINKIES */
+/* ✨ BLINKIES ✨ */
 .blinkie {
   display: block;
   margin: 5px auto;
 }
 
-/* DOLLS */
+/* ✨ DOLLS ✨ */
 .doll {
   display: block;
   margin: 10px auto;
   width: 180px;
 }
 
-/* ✨ CIRCLE PARTICLES ✨ */
+/* ✨ FALLING SPARKLE PARTICLES ✨ */
 .particle {
   position: fixed;
   top: -20px;
@@ -132,3 +133,4 @@ p {
     opacity: 0;
   }
 }
+
