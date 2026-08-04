@@ -1,7 +1,7 @@
-/* ✨ IMPORT GOOGLE FONT ✨ */
-@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+/* ✨ IMPORT Y2K BUBBLY FONT ✨ */
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
 
-/* ✨ CUSTOM DOWNLOADED FONT ✨ */
+/* ✨ CUSTOM FONT FOR HEADER ✨ */
 @font-face {
   font-family: 'WizardsMagic';
   src: url('fonts/WizardsMagic.ttf') format('truetype');
@@ -12,19 +12,16 @@ html, body, * {
   cursor: url('https://img.icons8.com/pulsar-gradient/48/sakura.png') 0 0, auto !important;
 }
 
-/* ✨ MAIN BODY ✨ */
+/* ✨ BODY ✨ */
 body {
-  font-family: 'Crafty Girls', cursive;
-  background: url('https://i.imgur.com/1QQC4Sc.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  font-family: 'Cherry Bomb One', cursive;
+  background: url('https://i.imgur.com/1QQC4Sc.jpeg') center/cover fixed;
   color: #ff1493;
   padding: 20px;
   line-height: 1.6;
 }
 
-/* ✨ HEADER + NAVIGATION ✨ */
+/* ✨ HEADER ✨ */
 header {
   text-align: center;
   margin-bottom: 20px;
@@ -35,13 +32,12 @@ header h1 {
   font-size: 60px;
   color: #ff1493;
   text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
-  margin: 0 auto;
 }
 
+/* ✨ NAVIGATION ✨ */
 nav {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 10px 0 20px;
 }
 
 nav a {
@@ -55,49 +51,44 @@ nav a:hover {
   text-shadow: 0px 0px 10px gold;
 }
 
-/* ✨ HEADERS ✨ */
-h1, h2 {
-  color: #ff1493;
-  text-shadow: 2px 2px 5px #b8860b; /* gold glow instead of black */
-}
-
-/* ✨ PARAGRAPHS ✨ */
-p {
-  font-size: 18px;
-  color: #ff69b4;
-}
-
-/* ✨ Y2K WRAPPER ✨ */
-#wrapper {
-  width: 900px;
-  margin: 0 auto;
-  background: rgba(255, 240, 250, 0.85);
-  border: 3px solid hotpink;
-  padding: 20px;
-  overflow: auto;
-  border-radius: 15px;
-}
-/* ✨ MAIN CONTENT ✨ */
+/* ✨ MAIN CONTENT BOX ✨ */
 #content {
   width: 600px;
   float: right;
+  padding: 20px;
+  background: rgba(255, 240, 250, 0.85);
+  border: 2px solid hotpink;
+  border-radius: 15px;
+  box-shadow: 0 0 15px gold;
+}
+
+/* ✨ SIDEBAR ✨ */
+#sidebar {
+  width: 250px;
+  float: left;
   padding: 10px;
+  background: rgba(255, 240, 250, 0.85);
+  border: 2px solid hotpink;
+  border-radius: 15px;
+  box-shadow: 0 0 10px gold;
 }
 
-/* ✨ BLINKIES ✨ */
-.blinkie {
-  display: block;
-  margin: 5px auto;
-}
-
-/* ✨ DOLLS ✨ */
+/* ✨ BUTTONS / BLINKIES / DOLLS ✨ */
+.y2k-button,
+.blinkie,
 .doll {
   display: block;
   margin: 10px auto;
-  width: 180px;
 }
 
-/* ✨ FALLING SPARKLE PARTICLES ✨ */
+.y2k-button,
+.doll {
+  width: 180px;
+  border: 2px solid gold;
+  border-radius: 10px;
+}
+
+/* ✨ PARTICLE EFFECT ✨ */
 .particle {
   position: fixed;
   top: -20px;
@@ -105,24 +96,8 @@ p {
   animation: fall 4s linear forwards;
   opacity: 1;
 }
-/* ✨ Text background box ✨ */
-.text-box {
-  background: rgba(255, 240, 250, 0.8); /* soft pink overlay */
-  border: 2px solid hotpink;
-  border-radius: 15px;
-  padding: 20px;
-  max-width: 800px;
-  margin: 20px auto;
-  color: #ff1493;
-}
 
 @keyframes fall {
-  0% {
-    transform: translateY(0) translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(110vh) translateX(40px);
-    opacity: 0;
-  }
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(110vh) translateX(40px); opacity: 0; }
 }
