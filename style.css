@@ -62,32 +62,6 @@ nav a:hover {
   box-shadow: 0 0 15px gold;
 }
 
-/* ✨ SIDEBAR ✨ */
-#sidebar {
-  width: 250px;
-  float: left;
-  padding: 10px;
-  background: rgba(255, 240, 250, 0.85);
-  border: 2px solid hotpink;
-  border-radius: 15px;
-  box-shadow: 0 0 10px gold;
-}
-
-/* ✨ BUTTONS / BLINKIES / DOLLS ✨ */
-.y2k-button,
-.blinkie,
-.doll {
-  display: block;
-  margin: 10px auto;
-}
-
-.y2k-button,
-.doll {
-  width: 180px;
-  border: 2px solid gold;
-  border-radius: 10px;
-}
-
 /* ✨ PARTICLE EFFECT ✨ */
 .particle {
   position: fixed;
