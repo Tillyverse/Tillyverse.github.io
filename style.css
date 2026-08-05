@@ -64,6 +64,47 @@ nav a:hover {
   box-shadow: 0 0 15px gold;
   float: none;            /* REMOVE SIDEBAR FLOAT */
 }
+/* ✨ ABOUT PAGE TEXT BACKGROUND ✨ */
+.text-box {
+  background: rgba(255, 240, 250, 0.85); /* soft pink transparent box */
+  border: 2px solid hotpink;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 0 15px gold;
+}
+
+/* ✨ INNER ABOUT BOX ✨ */
+.about-box {
+  text-align: center;
+}
+
+.about-pfp {
+  width: 180px;
+  border-radius: 15px;
+  border: 2px solid hotpink;
+  box-shadow: 0 0 10px gold;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 20px;
+  color: #ff1493;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  color: #ff1493;
+}
+
+.about-list li {
+  margin: 5px 0;
+}
 
 /* ✨ PARTICLE EFFECT ✨ */
 .particle {
